@@ -25,7 +25,7 @@ public class PatrimoineBakoTest {
         var compteEpargne = new Compte("Compte épargne BMOI", LocalDate.of(2025, Month.APRIL, 8), Argent.ariary( 625_000) );
         var coffreMaison = new Compte("Coffre fort", LocalDate.of(2025, Month.APRIL, 8), Argent.ariary(1_750_000));
 
-        var ordinateur = new Materiel("Ordinateur Portable", ce_jour, fin,Argent.ariary(3_000_000) , 0.12);
+        var ordinateur = new Materiel("Ordinateur Portable", ce_jour, fin,Argent.ariary(3_000_000) , -0.12);
 
         new FluxArgent("Salaire", compteCourant, ce_jour, fin, 2, Argent.ariary( 2_125_000));
         new FluxArgent("Epargne", compteEpargne, ce_jour, fin, 3, Argent.ariary(200_000));
